@@ -1,0 +1,224 @@
+@charset "UTF-8";
+/* CSS Document */
+
+a{
+	color:#E61673;
+}
+	
+div#container{
+	background-color:#FFF;
+	position: static;
+}
+
+div.contents{
+	padding:20px 10px 15px;
+	/* 上下アキは各作品extention.cssにて調整*/
+	clear:both;
+}
+	
+div#main{
+	min-height:1px; /* IE7対策 */
+	background:#DDEFF9 url(../images/main-bg.jpg) 0 0 no-repeat;
+}
+
+article p{
+	color:#231815;
+}
+
+article h3.name{
+	color:#E3007F;
+}
+
+article span.character_word {
+	width:12px;
+	margin: 0 0 0 5px;
+	padding-bottom: 5px;
+}
+
+img.bigcatch{
+	display:block; margin:0 0 8px 0;
+}
+
+em {
+	color:#EA6000;
+	font-weight: bold;
+	font-size:1.1em;
+	font-style:normal;
+}
+
+header{
+	background: #DDEFF9;
+	padding-top: 440px;
+}
+
+header h1{
+}
+
+h2#doukonban{
+	margin-top: -10px;
+}
+
+.comicCol p:nth-child(2){
+	margin-bottom: 15px;
+}
+
+/* 映画バナー ======================================== */
+
+#voteBn{
+	position: absolute;
+	top: 10px;
+}
+
+/* 続爆焔02バナー ======================================== */
+
+/*article#zokubakuen02-wrap{
+	position: absolute;
+	top: 10px;
+}*/
+
+
+
+
+/* コミックス ======================================== */
+
+div.comic_top{
+	margin: 0 0 15px -10px;
+}
+
+
+/* ストーリー ======================================== */
+article p.txt em {
+	font-style: normal;
+	font-weight:normal;
+	font-size:1em;
+	color:#FFFF00;
+}
+
+/* キャラクター ======================================== */
+
+article#characters ul{
+	font-size: 0;
+	letter-spacing: -1em;
+}
+article#characters ul li{
+	display: inline-block;
+	vertical-align: top;
+	letter-spacing: 0;
+	margin-right: 17px;
+}
+article#characters ul li:nth-of-type(6){
+	margin-right: 0;
+}
+article#chara {
+	width: 960px;
+	height: auto;
+	margin: 0 0 20px -10px;
+}
+
+article#chara h2 {
+	margin: 0;
+	margin-bottom: 14px;
+}
+
+
+/* 小説リンク======================================== */
+
+
+article div.novel_box{
+	/*width: 280px;*//*3分割の時に使う*/
+	width: 450px;
+	float: left;
+	padding: 0 10px 10px;
+}
+
+article div.novel_box h3{
+	line-height:1.4em;
+	margin-bottom:0.3em;
+}
+
+article ul.novels{
+	border-top:#7D7D7D 1px dotted;
+	padding:10px 0 0 20px;
+}
+
+article ul.novels li{
+	width: auto;
+	padding:0 0 0 15px;
+	font-weight:bold;
+	line-height:1.2em;
+	background:url(../images/novels-li_bg.png) no-repeat;
+}
+
+article ul.novels li span.day {
+	display: block;
+    font-size: 0.7em;
+}
+
+article p.novel_txt{
+	padding-bottom: 5px;
+	line-height: 1.3;
+	font-weight: bold;
+}
+
+/* 壁紙======================================== */
+article div.wallpaper img.wpimg{ 
+	width:218px;
+	border:solid 1px #000000;
+}
+	
+/* 関連リンク テキスト======================================== */
+article p.linktxt {
+	margin:0 0 5px 0;
+	font-size:0.8em;
+}
+
+article ul.link li.txt{
+	width: auto;
+	padding:0 0 5px 15px;
+	font-weight:bold;
+	line-height:1.2em;
+	background:url(../images/novels-li_bg.png) no-repeat;
+}
+
+article ul.link li span.day {
+	display: block;
+    font-size: 0.7em;
+}
+
+article ul.link li.banner{
+	width: auto;
+	padding:0 0 5px 0;
+}
+
+article ul.link_img li{
+	margin:0 0 15px;
+}
+
+/* 既刊紹介======================================== */
+
+div#series{
+	min-height:1px;
+	background-color: #E61673;
+}
+
+div#series article h2 {
+	margin: 0 0 15px 0;
+}
+
+div#extra,
+div#artbook{
+	min-height:1px;
+	background-color: #E61673;
+	padding-top: 0;
+}
+
+div#extra article h2,
+div#artbook article h2 {
+	margin: 0 0 15px 0;
+}
+
+#series a,
+#extra a,
+#artbook a{
+    color: #fff;
+}
