@@ -1,0 +1,38 @@
+
+/*モーダルデザイン*/
+.character .modaal-overlay{
+	background: url(/konosuba/img/bg_konosuba.jpg) !important;
+	opacity: 1 !important;
+}
+.character .modaal-wrapper .modaal-close{
+	background: #401814;
+}
+.character .modaal-wrapper .modaal-close:hover{
+	background: #fff;
+}
+.character .modaal-close:focus:before,
+.character .modaal-close:focus:after,
+.character .modaal-close:hover:before,
+.character .modaal-close:hover:after {
+	background: #401814;
+}
+.modaal-gallery-item{
+	max-width: 1000px;
+}
+.character .modaal-container{
+	background:transparent;
+	box-shadow: none;
+}
+
+.character-set{
+	display: inline-block;
+	margin:8rem auto 4rem;
+	max-width: 1000px;
+}
+
+@media screen and (max-width: 750px){
+	.character-set{
+		max-width: 100%;
+	}
+
+}
