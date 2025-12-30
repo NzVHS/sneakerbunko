@@ -1,0 +1,295 @@
+/*==================================================
+=			defalut			 =
+==================================================*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,li,aside,dialog,figure,footer,header,hgroup,menu,nav,section,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-weight:normal;vertical-align:baseline;background:transparent;}body{line-height:1;}li,aside,dialog,figure,footer,header,hgroup,nav,section{display:block;}nav ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}a{margin:0;padding:0;border:0;vertical-align:baseline;background:transparent;}ins{background-color:#ff9;color:#000;text-decoration:none;}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold;}deltext-decoration:line-through;}abbr[title],dfn[title]{border-bottom:1px dotted #000;cursor:help;}table{border-collapse:collapse;border-spacing:0;}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}input,select{vertical-align:middle;}img{vertical-align:bottom;}
+
+html{width:100%; height:100%; font-size: 62.5%;-webkit-text-size-adjust: 100%;}
+body{width: 100%; height:100%; word-wrap: break-word; color: #fff; position:relative; font-family: "驛｢譎｢�ｽ�｡驛｢�ｧ�ｽ�､驛｢譎｢�ｽ�ｪ驛｢�ｧ�ｽ�ｪ", Meiryo, -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "驛｢譎擾ｿｽ�主ｸｷ�ｹ�ｧ�ｽ�ｮ驛｢譎���ｽ�ｧ陋幢ｽｵ邵ｺ�ｽ ProN W3", Hiragino Kaku Gothic ProN, Arial, sans-serif;}
+img {max-width: 100%; height: auto;}
+
+.cf:before,.cf:after {content:"";display:table;}
+.cf:after {clear:both;}
+.cf {*zoom:1;}
+
+body{
+	 overflow-y: scroll;
+	text-align:left;
+	margin:0 auto;
+	background:#fff;
+	color:#434343;
+	font-family: YakuHanJP, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
+	line-height:1.6;
+	font-weight:400;
+	font-size: 62.5%;/*驛｢譎｢�ｿ�ｽ郢晢ｽｵ驛｢�ｧ�ｽ�ｩ驛｢譎｢�ｽ�ｫ驛｢譎｢�ｿ�ｽ10px*/
+	-webkit-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	font-smoothing: flex;
+}
+
+.mincho{
+	font-family :YuMincho,    /* Mac鬨ｾ蛹�ｽｽ�ｨ */
+	'Yu Mincho', /* Windows鬨ｾ蛹�ｽｽ�ｨ */
+	serif;
+	line-height:1.6;
+}
+
+.hov:hover{/*驛｢譎擾ｽｸ蜷ｶﾎ｣驛｢譎｢�ｽ�ｼ驍ｵ�ｺ陷会ｽｱ隨ｳ�ｽ�ｭ蠑ｱ�托ｿｽ�ｼ陞｢�ｼ�ｽ�ｽ鬯ｨ�ｾ�ｽ�ｽ*/
+	cursor:pointer;
+	text-decoration: transparent;
+	opacity:0.6;
+		-webkit-transition: all 0.2s;
+		-moz-transition: all 0.2s;
+		-ms-transition: all 0.2s;
+		-o-transition: all 0.2s;
+		transition: all 0.2s;
+}
+.hov:active{
+	cursor:pointer;
+	text-decoration: transparent;
+	opacity:0.6;
+		-webkit-transition: all 0.2s;
+		-moz-transition: all 0.2s;
+		-ms-transition: all 0.2s;
+		-o-transition: all 0.2s;
+		transition: all 0.2s;
+}
+.flexbox{
+	display:flex;
+	justify-content: space-between;
+}
+
+section{
+	display: block;
+	text-align:center;
+	z-index: 1;
+}
+
+.wrapper{
+	width: 100%;
+	min-width: 100px;
+	text-align: left;
+	overflow: hidden;
+}
+
+/*.top{
+	background:url('../imge/top-bg-tokyo.png') no-repeat,url('../imge/top-bg.jpg') repeat;
+	width:100%;
+	background-position:bottom -0.5rem right 0;
+}*/
+.top-main{
+	margin:0 auto;
+	margin-top:3rem;
+}
+.btn{
+	display: inline-block;
+	width:90%;
+	padding:28px 0;
+	background:#b70202;
+	border-radius: 7px;
+	margin:2.2rem auto 3.5rem;
+	box-shadow: 0px 4px 0 rgba(26, 48, 39, 1);
+	transition: 0.2s all ease 0s;
+	position:relative;
+}
+.btn::before{
+	content:'';
+	background:url('../imge/arrow.png') no-repeat;
+	width:10px;
+	height:10px;
+	top:43%;
+	right:5%;
+	display: inline-block;
+	position:absolute;
+}
+
+.btn:hover{
+	background-color: #ffa8a8;
+	box-shadow: none;
+	transform: translate3d(0, 3px, 0);
+}
+.btn img{
+	max-width:298px;
+	width:80%;
+	}
+.tokyolife{
+	position: relative;
+	padding:50px 0 70px;
+	max-width: 1200px;
+	margin:0 auto;
+}
+.tokyolife::before{
+	position: absolute;
+	content:'';
+	width:15rem;
+	height:15rem;
+	background:#fde7e7;
+	 top: 5%;
+	left: 5%;
+	z-index: -1;
+}
+.tokyolife::after{
+	position: absolute;
+	content:'';
+	width:1000px;
+	height:60%;
+	background:#ec1313;
+	top: 40%;
+	left: 0;
+	z-index: -1;
+}
+.tokyolife-inner{
+	position:relative;
+	display: block;
+}
+.tokyolife-inner h2 img{
+	width:90%;
+}
+.rensai{
+	padding:80px 0 60px;
+	background:url('../imge/rensai-bg.jpg') repeat;
+}
+.rensai h2{
+	width:90%;
+	margin:0 auto;
+}
+.rensai-inner{
+	max-width: 1150px;
+	margin:0 auto;
+}
+.rensai-naiyou{
+	margin:0 auto;
+	margin-top:4rem;
+	width:90%;
+	max-width:584px;
+}
+
+/*.notice{
+	background:url('../imge/top-bg.jpg') repeat;
+	width:100%;
+	padding: 40px 0;
+}*/
+.notice-inner{
+	background:#fff;
+	width:90.93%;
+	max-width:582px;
+	padding:40px 0;
+	margin:0 auto;
+	display: inline-block;
+}
+.notice-inner-box{
+	width:72%;
+	display: inline-block;
+}
+
+.notice-main{
+	margin-bottom:3rem;
+}
+.notice .btn{
+	width:90%;
+	margin:0 auto;
+}
+.notice .btn{
+	margin-top:1.5rem;
+}
+.notice .btn img{
+	max-height:2rem;
+	width:76%;
+	width:auto;
+	max-width:72%;
+	}
+.notice .btn:first-of-type{
+	margin-top:0.5rem;
+}
+
+
+
+*驛｢譎�ｽｼ驥�㏍�ｹ譎｢�ｿ�ｽ邵ｺ蜥ｲ�ｹ譎｢�ｽ�ｼ*/
+.slider-container, .slider-nav-container {
+  display: none;
+  position: relative;
+}
+.slider-container.initialized, .slider-nav-container.initialized {
+  display: block;
+}
+.slider-nav-container {
+  margin-top: 1rem;
+}
+.slider {
+  overflow: hidden;
+}
+.slider-nav {
+  margin: 0 auto;
+	position: relative;
+}
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  height: 36px;
+  margin-top: -18px;  /* 鬯ｯ�ｮ陋滂ｽ･�ｽ�ｽ�ｸ�ｺ�ｽ�ｮ髯ｷ莨∝ｮｦ�ｽ�ｽ驍ｵ�ｺ�ｽ�ｽ驍ｵ�ｺ闔会ｽ｣郢晢ｽｭ驛｢�ｧ�ｽ�ｬ驛｢譎｢�ｿ�ｽ邵ｺ�ｽ�ｹ譎�§�ｽ�ｽ驛｢譎｢�ｽ�ｼ驛｢�ｧ�ｽ�ｸ驛｢譎｢�ｽ�ｳ */
+  color: #aaa;
+  line-height: 36px;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 10;  /* 鬯ｩ�･陝�雜｣�ｽ�ｦ�ｽ�ｽ */
+}
+.slider-prev {
+  left: 0;
+}
+.slider-next {
+  right: 0;
+}
+.slick-slide {
+  outline: 0;
+}
+.slider .slick-slide > img, .slider-nav .slick-slide > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.slick-current{
+	max-width: 84%;
+	margin: 0 auto;
+}
+.slider-nav img{
+	width:90% !important;
+	position: relative;
+	height: 10vw;
+
+}
+.slider-nav .slick-slide{
+	position: relative;
+}
+.slider-nav .slick-slide::after{
+	position: absolute;
+	left:0;
+	top:0;
+	content: "";
+	border:solid 3px #898989;
+	z-index: 9999;
+	width: 79%;
+	height:9vw;
+}
+
+
+
+
+.magnifying{
+	width:100%;
+	display:inline-block;
+	margin:0.7rem auto;
+}
+.magnifying img{
+	display:inline;
+	position: relative
+}
+.magnifying p{
+	display:inline;
+	font-size:1.3rem;
+}
+
+@media screen and (min-width: 750px){
+.sp_img{
+	display:none;
+}
+}
