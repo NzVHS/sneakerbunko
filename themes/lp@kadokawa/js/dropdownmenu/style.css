@@ -1,0 +1,45 @@
+ul.menu1 {list-style:none; margin:0; padding:0;}
+ul.menu1 * {margin:0; padding:0;}
+ul.menu1 a {display:block; color:#fff; text-decoration:none;border-bottom:1px solid #FF87CF;}
+ul.menu1 a:hover {color:#FFF031;}
+ul.menu1 li {position:relative; float:left;border:0px none;font-size:0.85em;}
+ul.menu1 ul {position:absolute; top:30px; left:0; background:#FF009C; display:none; opacity:0; list-style:none;}
+ul.menu1 ul li {position:relative; width:172px; margin:0;font-size:1em;}
+ul.menu1 ul li a {display:block; padding:4px 6px 4px; background-color:#FF009C;}
+ul.menu1 ul li a:hover {background-color:#FF24AA; color:#FFF031;}
+ul.menu1 ul li ul {left:172px; top:-1px;}
+/*ul.menu1 ul li ul li { font-size:0.85em;}*/
+ul.menu1 ul li ul li ul{top:-120px; left:172px; background-color:#FF009C;}
+ul.menu1 ul li ul li ul.second{ top:-140px; background-color:#FF009C;}
+ul.menu1 ul li ul li ul li {font-size:1em;}
+ul.menu1 ul li ul li ul.rightmenu li { left:172px;}
+ul.menu1 .menulink {border-bottom:none; padding:0; width:172px}
+ul.menu1 .sub {background:#FF009C url(images/arrow.gif) 172px 8px no-repeat;}
+ul.menu1 .topline {border-top:1px solid #FF87CF;}
+
+
+/*ul.menu1 ul li.rightmenu {position:relative; left:160px;}*/
+
+
+
+ul.menu2 {list-style:none; margin:0; padding:0;}
+ul.menu2 * {margin:0; padding:0;}
+ul.menu2 a {display:block; color:#222; text-decoration:none;border-bottom:1px solid #fff;}
+ul.menu2 a:hover {color:#FF009C;}
+ul.menu2 li {position:relative; float:left;border:0px none;font-size:0.85em;}
+ul.menu2 ul {position:absolute; bottom:20px; left:0; background:#ccc; display:none; opacity:0; list-style:none;}
+ul.menu2 ul li {position:relative; width:156px; margin:0;font-size:1em;}
+ul.menu2 ul li a {display:block; padding:4px 6px 4px; background-color:#ddd;}
+ul.menu2 ul li a:hover {background-color:#ccc; color:#FF009C;}
+ul.menu2 ul li ul {bottom:0px;left:156px; }
+ul.menu2 ul li ul li{width:200px; }
+ul.menu2 ul li ul li ul{bottom:120px; left:156px; background-color:#ddd;}
+ul.menu2 ul li ul li ul.second{ bottom:140px; background-color:#ddd;}
+ul.menu2 ul li ul li ul li {width:200px;font-size:1em;}
+ul.menu2 ul li ul li ul.rightmenu li { left:156px;}
+ul.menu2 .menulink {border-bottom:none; padding:0; width:156px}
+ul.menu2 .sub {background:#ddd url(images/arrow.gif) 200px 8px no-repeat;}
+ul.menu2 .topline {border-top:1px solid #fff;}
+
+
+/*ul.menu ul li.rightmenu {position:relative; left:160px;}*/

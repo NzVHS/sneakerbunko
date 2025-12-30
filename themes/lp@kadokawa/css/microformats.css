@@ -1,0 +1,137 @@
+@charset "UTF-8";
+/* ====================================================================
+
+★Microformat CSS
+
+==================================================================== */
+
+/* --------------------------------------------------------------------
+■基本単一型　マイクロフォーマット
+==================================================================== */
+
+/* -- XFN [リンク先との人間関係] ----------------------------------- */
+
+[rel="contact"] {}		/* 連絡先が分かる知人 */
+[rel="acquaintance"] {}	/* 知り合い */
+[rel="friend"] {}		/* 友人 */
+[rel="met"] {}			/* 会ったことのある人 */
+[rel="co-worker"] {}	/* 職場の同僚 */
+[rel="colleague"] {}	/* 同じ研究・活動分野の仲間 */
+[rel="co-resident"] {}	/* 同居人 */
+[rel="neighbor"] {}		/* 隣人 */
+[rel="muse"] {}			/* 尊敬する人 */
+[rel="crush"] {}		/* 想い人、片思いの相手 */
+[rel="date"] {}			/* デートの相手 */
+[rel="sweetheart"] {}	/* 恋人 */
+[rel="child"] {}		/* 子供 */
+[rel="sibing"] {}		/* 兄弟、姉妹 */
+[rel="parent"] {}		/* 親 */
+[rel="spouse"] {}		/* 配偶者 */
+[rel="kin"] {}			/* 親戚 */
+[rel="me"] {}			/* 自分 */
+
+
+
+/* -- VoteLinks [リンク先のページに対して賛成、反対など] ----------- */
+/* ※title属性で人間にも読めるように賛成、反対、棄権を示す必要がある。 */
+
+[rev="vote-for"]		/*賛成*/
+[rev="vote-against"]	/*反対*/
+[rev="vote-abstain"]	/*棄権*/
+
+
+
+/* --------------------------------------------------------------------
+■応用組合せ型　マイクロフォーマット
+==================================================================== */
+
+/* -- hCard（個人、企業情報） -------------------------------------------------------- */
+
+.vcard {} /* hCardのルート要素に指定 */
+
+.fn {}					/* 名称 *//* ※俗称等でも可 */
+  .n {}					/* 氏名 */
+  .org {}				/* 組織 */
+    .organization-name {} /* 組織名 */
+    .organization-unit {} /* 組織名 */
+
+.adr {}					/* 住所 */
+  .country-name {}		/* 国名 */
+  .locality {}			/* 都道府県 */
+  .region {}			/* 市町村 */
+  .street-address {}	/* 通り、丁、番地 */
+  .extended-address 	/* 建物名、部屋番号 */
+  .postal-code			/* 郵便番号 */
+  .post-office-box		/* 私書箱 */
+  .type {}				/* 住所の種類　日）[仕事場|自宅|優先|郵便受取|国内|国外]　英）[work|home|pref|postal|dom|intl] */
+  .value {}
+
+
+/* -- hProduct（商品情報） -------------------------------------------------------- */
+
+.hproduct {}			/* hProductのルート要素に指定 */
+　.brand {}				/* ブランド。制作会社、販売会社 */
+　.category {}			/* 分類 */
+　.price {}				/* 価格 【一意】*/
+　.description {}		/* 説明 【一意】*/
+　.fn {}				/* 名称 【一意】*/
+　.photo {}				/* 画像  <img> or <a> */
+　.url {}				/* 詳細ページへのリンク 【一意】*/
+　.review {}			/* レビュー、感想 *//* Should use hReview */
+　.listing {}			/* リスティング *//* should use hListing */
+　.identifier {}		/*  */
+
+
+/* -- hAtom -------------------------------------------------------- */
+
+.hfeed {}				/* hAtomのルート要素に指定 */
+  .hentry {}
+  .author {}
+  .entry-title {}
+  .entry-content {}
+  .entry-summary {}
+  .published {}			/*ISO Date、発行日*/
+  .updated {}			/*ISO Date、編集日*/
+
+/* -- hResume（履歴書） ------------------------------------------------------ */
+
+.hresume {}				/* hResumeのルート要素に指定 */
+  .affiliation {}		/* (hcard)、所属組織 */
+  .education {}			/* (hcalendar)、学歴 */
+  .experience {}		/* (hcalendar)、経験 */
+  .publication {}		/* (citation)、寄稿・出版物 */
+  .skill {}				/* スキル・資格、rel="tag" */
+  .summary {}			/* 自己紹介 */
+  .contact {}			/* (hCard)、連絡先 */
+
+/* -- hCalendar ---------------------------------------------------- */
+
+.dtstart				/* ISO Date */
+.summary				/* 必須 */
+  .location
+  .url
+  .dtend				/* ISO Date, duration (ISO date duration) */
+  .rdate				/* rrule */
+  .category				/* description */
+  .uid
+  .geo					/* latitude, longitude */
+  .attendee				/* (partstat, role), contact, organizer */
+  .attach
+  .status
+
+/* -- hReview（レビュー）
+　参照はこちら　http://microformats.org/wiki/hreview-ja ---------------- */
+
+.hreview{}
+ .version{}				/* コンテンツ中で使用しているhReviewのバージョン */
+ .summary{}				/* レビュー自体のタイトル */
+ .item type{} 			/* レビュー対象のタイプ　product、business、event、person、place, website、urlのいずれか一つ */
+ .item info{} 			/* レビュー対象の説明　名称 URL 画像などなど／／／人物または企業＝hCard／イベント＝hCalender　*/　
+ .reviewer{}			/* レビューを書いた人 */
+ .dtreviewed{}			/* レビューが書かれた日時（ISO8601 絶対日時） */
+ .rating{}				/* 格付け※デフォルトでは数値高＝評価高 */
+ .description{}			/* レビュアーの意見を書いたテキスト全文 */
+ .tags{}				/* itemと結びつけたキーワードやフレーズ */
+ .permalink{}			/* この記事のURL */
+ .license{}				/* 記事自体のライセンス */
+ 

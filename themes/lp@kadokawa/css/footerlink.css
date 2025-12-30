@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* footer ---------------------------------------------------------------------------------------------------- */
+/* =========================================================================================================== */
+
+
+footer {
+clear:both;
+width:100%;
+margin:0 auto;
+padding:10px 0 25px 0;
+font-size:0.7em;
+color:#000;
+background-color:#F2F2F2;
+}
+
+footer p#price{ clear:both; text-align:center;}
+
+#footlink{
+	width:550px;
+	margin:0 auto 5px auto;
+	/*text-align:left; 
+	background-color: #FF66CF;
+	background-image:url(/images/footer_link_bg.png);
+	background-repeat: repeat;
+	clear:both;
+	border:#FFFFFF 10px solid;*/
+}
+#footlink a{ color:#000;}
+#footlink a:hover{ text-decoration:underline;}
+#footlink p{ float:right; padding:0 0 0 10px;}
+#footlink ul li{
+	float:left;
+	_display:inline;
+	padding:0 10px ;
+	background-image:url(../images/arrow_1.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+/* special footer ---------------------------------------------------------------------------------------------------- */
+/* =========================================================================================================== */
+/* 個別で変更の場合は各作品内extention.cssにて*/
+
+/*#special #footlink{
+	border:#FFFFFF 20px solid;
+}
+#special #footlink a{ color:#000;}
+#special #footlink ul{}
+#special #footlink ul li{ width:133px; float:left; line-height:0;_display:inline; padding:10px; }
+#special #footlink ul li dl{ width:133px;}
+#special #footlink ul li dl dt{ padding-bottom:8px;}
+#special #footlink ul li dl dd{ font-size:0.85em; line-height:1.5;}
+
+
+#special footer {
+color:#000000;
+}*/
+
+/* footer type text */
+footer {
+	width: 960px;
+}
+nav#nav-footer {
+	width: 960px!important;
+	height: 20px;
+	position: relative;
+	background-repeat: no-repeat;
+	z-index: 200;
+	margin: 0 auto;
+	background-image: none!important;
+	background-color: #FF009C;
+	clear: both;
+	background-position: center center;
+}
+#nav-footer ul {
+	width: 940px;
+	margin: 0 auto;
+}
+#nav-footer ul li {
+	float: left;
+}
+#nav-footer ul li a {
+	display: block;
+	width: auto;
+	height: 20px;
+	text-align: center;
+	font-weight: bold;
+	padding: 0 30px;
+	color: #fff;
+	font-size: 14px;
+	position: relative;
+	line-height: 1.6;
+	transition: .2s;
+}
+#nav-footer ul li a:hover {
+	opacity: 0.8;
+	text-decoration: none;
+}
+#nav-footer ul li a span {
+	position: relative;
+}
+#nav-footer ul li a span:before {
+	position: absolute;
+	top: 50%;
+	left: -15px;
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 4px 6px 4px;
+	border-color: transparent transparent #ffda33 transparent;
+	margin-top: -4px;
+}
+
+#footlink {
+	width: 280px!important;
+}
+
+.footerLogo {
+	text-align: center;
+}
+
+.footerLogoWrap {
+	margin: 0 0 10px;
+}
+
+.footerLogoWrap svg #top {
+	fill: #333;
+}

@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* ============================================================
+
+★ Import　スペシャル用フォーマット
+
+============================================================ */
+
+@import url("reset.css");
+@import url("footerlink.css");
+@import url("default-special.css");
+@import url("microformats.css");
